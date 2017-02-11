@@ -1,0 +1,68 @@
+
+body {
+    color: #000000;
+}
+.cbody #container {
+    background: #FFFFFF;
+    position: relative;
+    /* относительная позиция отцентрует блок относительно левого и правого отступов*/
+
+width: 780px;
+    /* используем на 20px меньше из полных 800px ширины это позволит избежать проблем с горизонтальной полосой прокрутки в браузерах Chrome */
+
+margin: 0 auto;
+    /* параметр auto в союзе с width центрует страницу*/
+
+text-align: left;
+    /* это заменяет text-align: center на элементе body. */
+}
+.cbody #header {
+    height: 60px;
+    padding: 0 10px 0 20px;
+    /* дополнительные отступы слева и снизу для красоты. */
+
+background-color: #33CCFF;
+}
+.cbody #sidebar1 {
+    position: absolute;
+    top: 60px;
+    /* смещение сверху на высоту шапки */
+
+left: 0;
+    /* положение слева */
+
+width: 150px;
+    /* ширина колонки, фоновый цвет будет присутствовать только в пределах блока */
+
+padding: 15px 10px 15px 20px;
+    /* отступы */
+
+background-color: #FF99CC;
+}
+.cbody #sidebar2 {
+    position: absolute;
+    top: 60px;
+    /* смещение сверху на высоту шапки */
+
+right: 0;
+    /* положение справа */
+
+width: 160px;
+    /* ширина колонки, фоновый цвет будет присутствовать только в пределах блока */
+
+padding: 15px 10px 15px 20px;
+    /* отступы */
+
+background-color: #FF99CC;
+}
+.cbody #mainContent {
+    margin: 0 200px;
+    /* правое и левое поле создают две колонки по сторонам страницы. Безразлично, сколько sidebar содержит, пространство колонки останется неизменным. */
+
+padding: 0 10px;
+    /* запомните padding пространство внутри div, а margin пространство за пределами div*/
+}
+.cbody #footer {
+    padding: 0 10px 0 20px;
+    background-color: #336699;
+}
